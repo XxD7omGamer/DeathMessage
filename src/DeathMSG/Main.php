@@ -44,9 +44,7 @@ class Main extends PluginBase implements Listener {
                   $player->sendTip(TF::RED." you killed by ".TF::GREEN.$killer->getName().TF::RED." with ".TF::GREEN.$killer->getHealth());
                   $killer->sendTip(TF::YELLOW."+1 ".TF::DARK_AQUA."for killing ".TF::YELLOW.$player->getName());
                   $killer->getLevel()->addSound($click);
-             $killer->setHealth($killer->setMaxHealth());
-            
-		}
+                  $killer->setHealth($killer->setMaxHealth());
             }
         }
     }
